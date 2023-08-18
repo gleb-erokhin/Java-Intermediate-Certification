@@ -46,4 +46,10 @@ public class Toy {
         this.frequency = frequency;
     }
 
+    public void setWeight(double weight) {
+    }
+
+    public void getWeight() {
+
+    }
 }
