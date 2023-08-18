@@ -1,16 +1,18 @@
 public class Toy {
     private int id;
     private String name;
+    private int quantity;
     private double frequency;
+
 
 //    Создаем конструктор и гетеры и сетеры
 
-    public Toy(int id, String name, double frequency) {
+    public Toy(int id, String name, int quantity, double frequency) {
         this.id = id;
         this.name = name;
+        this.quantity = quantity;
         this.frequency = frequency;
     }
-
 
     public int getId() {
         return id;
@@ -18,6 +20,9 @@ public class Toy {
 
     public String getName() {
         return name;
+    }
+    public int getQuantity() {
+        return quantity;
     }
 
     public double getFrequency() {
@@ -33,14 +38,12 @@ public class Toy {
         this.name = name;
     }
 
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
     public void setFrequency(double frequency) {
         this.frequency = frequency;
     }
-
-//    Создаем массив игрушек, первый массив это id, второй массив name, третий массив frequency
-
-    int[] ids = {1, 2, 3, 4, 5};
-    String[] names = {"Кукла", "Мяч", "Машинка", "Пазл", "Конструктор"};
-    double[] frequencys = {0.2, 0.3, 0.1, 0.2, 0.2};
 
 }
