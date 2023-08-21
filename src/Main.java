@@ -15,7 +15,7 @@ public class Main {
                     shop.saveToFile(FILENAME);
                 } else {
                     shop.loadFromFile(FILENAME); }
-                shop.setWeight(1, 15); // изменить вес куклы Барби на 30
+                shop.setWeight(1, 15); // тут можно изменить вес отдельной игрушки номер по id
 
             ArrayList<String> toyList = shop.getToyList(); // получить список игрушек в магазине
             for (String toy : toyList) {
@@ -29,7 +29,7 @@ public class Main {
             System.out.println(t.getName());
         }
 
-        shop.saveToFile(FILENAME);       // сохранить данные об игрушк
+        shop.saveToFile(FILENAME);       // сохранить данные об игрушках
         } catch (IOException e) {
             System.out.println("Ошибка при работе с файлами: " + e.getMessage());
         }

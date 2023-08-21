@@ -37,7 +37,7 @@ public class ToyShop {
         }
     }
 
-    // Метод получения списка игрушек с их атрибутами (id, название, количество и все)
+    // Метод получения списка игрушек с их атрибутами (id, название, количество и веса)
     public ArrayList<String> getToyList() {
         ArrayList<String> toyList = new ArrayList<>();
         for (Toy t : toys) {
