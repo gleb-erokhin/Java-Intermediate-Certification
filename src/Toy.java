@@ -2,17 +2,16 @@ public class Toy {
     private int id;
     private String name;
     private int quantity;
-    private double frequency;
+    private double weight;
 
 
-//    Создаем конструктор и гетеры и сетеры
-
-    public Toy(int id, String name, int quantity, double frequency) {
+    public Toy(int id, String name, int quantity, double weight) {
         this.id = id;
         this.name = name;
         this.quantity = quantity;
-        this.frequency = frequency;
+        this.weight = weight;
     }
+
 
     public int getId() {
         return id;
@@ -21,35 +20,20 @@ public class Toy {
     public String getName() {
         return name;
     }
+
     public int getQuantity() {
         return quantity;
-    }
-
-    public double getFrequency() {
-        return frequency;
-    }
-
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 
-    public void setFrequency(double frequency) {
-        this.frequency = frequency;
+    public double getWeight() {
+        return weight;
     }
 
     public void setWeight(double weight) {
-    }
-
-    public void getWeight() {
-
+        this.weight = weight;
     }
 }
